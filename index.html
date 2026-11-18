@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEON CAR RACING</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HALAMAN LOGIN -->
+  <section id="loginScreen" class="screen login">
+    <h1>NEON RACING</h1>
+    <p>LOGIN TO PLAY</p>
+
+    <input id="username" type="text" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+
+    <button id="loginButton">LOGIN</button>
+    <p id="loginMessage"></p>
+  </section>
+
+  <!-- HALAMAN WELCOME -->
+  <section id="welcomeScreen" class="screen hidden">
+    <h1>🏎️ NEON RACING</h1>
+    <p>Welcome to Car Racing Game</p>
+    <button id="openGame">OPEN GAME</button>
+    <button id="logoutButton">LOGOUT</button>
+  </section>
+
+  <!-- HALAMAN GAME -->
+  <section id="gameScreen" class="screen hidden">
+    <h1>CAR RACING</h1>
+    <h2>Score: <span id="score">0</span></h2>
+
+    <div id="gameArea">
+      <div id="player" class="car">🏎️</div>
+    </div>
+
+    <div class="controls">
+      <button id="leftBtn">⬅️</button>
+      <button id="rightBtn">➡️</button>
+    </div>
+
+    <button id="startButton">START GAME</button>
+    <button id="homeButton">HOME</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

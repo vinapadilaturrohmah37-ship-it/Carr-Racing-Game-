@@ -1,0 +1,90 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #080812;
+  color: white;
+  text-align: center;
+}
+
+.screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 25px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.login h1, .screen h1 {
+  color: #c084fc;
+  text-shadow: 0 0 15px #9333ea;
+}
+
+input {
+  width: 280px;
+  max-width: 100%;
+  padding: 14px;
+  border: 1px solid #a855f7;
+  border-radius: 10px;
+  background: #19152a;
+  color: white;
+  font-size: 16px;
+}
+
+button {
+  padding: 13px 25px;
+  border: none;
+  border-radius: 10px;
+  background: #9333ea;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #c084fc;
+  color: #150b20;
+}
+
+#loginMessage {
+  color: #fca5a5;
+}
+
+#gameArea {
+  width: 280px;
+  height: 420px;
+  max-height: 55vh;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #a855f7;
+  border-radius: 12px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #24243a 0px,
+    #24243a 45px,
+    #33334a 45px,
+    #33334a 90px
+  );
+}
+
+.car {
+  position: absolute;
+  bottom: 15px;
+  left: 115px;
+  font-size: 38px;
+}
+
+.controls {
+  display: flex;
+  gap: 20px;
+}
